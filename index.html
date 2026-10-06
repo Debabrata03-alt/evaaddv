@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EVA – Redefining Urban Mobility</title>
+<meta name="description" content="EVA is a ride-sharing ecosystem for riders, drivers and cities. A connected mobility ecosystem for riders, drivers and cities.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- GSAP & ScrollTrigger CDN for Advanced Animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="is-loading">
+
+<div class="cursor-spotlight"></div>
+
+<div id="preloader" aria-hidden="true">
+  <div class="dots"><span class="dot g"></span><span class="dot y"></span><span class="dot r"></span></div>
+</div>
+
+<header class="nav">
+  <a href="#top" class="brand" aria-label="EVA home"><img src="logo.png" alt="EVA"></a>
+  <nav aria-label="Primary">
+    <a href="#why">Why EVA</a>
+    <a href="#customer">Customer app</a>
+    <a href="#rider">Rider app</a>
+    <a href="#ride-booking">Ride Booking</a>
+    <a href="#parcel">Parcel</a>
+    <a href="#logistics">Logistics</a>
+    <a href="#partners">Partners</a>
+    <a href="#contact" class="pill">Contact Us</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Redefining Urban Mobility with EVA</h1>
+      <p>One ecosystem for riders, drivers and cities. Book in seconds, arrive on time, and move through the city without the friction.</p>
+      <a href="#why" class="btn">Explore EVA</a>
+    </div>
+    <div class="slot" id="heroSlot"></div>
+  </section>
+
+  <section class="section why" id="why">
+    <img id="rider" class="rider" src="rider.png" alt="EVA rider on a scooter" draggable="false">
+    <div class="slot" id="whySlot"></div>
+    <div class="why-copy reveal">
+      <h2>Why choose EVA</h2>
+      <ul class="facts">
+        <li><strong>Pickups in minutes.</strong> Smart matching puts the nearest rider on your route.</li>
+        <li><strong>Clear fares.</strong> You see the price before you book, and it does not change.</li>
+        <li><strong>Built for safety.</strong> Verified riders, live trip sharing and 24/7 support.</li>
+        <li><strong>Lower emissions.</strong> A growing electric fleet keeps city air cleaner.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section split" id="customer">
+    <div class="copy reveal">
+      <h2>The customer app</h2>
+      <p>Set a destination, pick a ride and track it live. Pay in one tap and share your trip with anyone you trust.</p>
+    </div>
+    <div class="app-image-container tilt-card reveal d1" aria-label="Customer app preview">
+      <img src="./customer.jpeg" alt="Customer App Preview" class="preview-img">
+    </div>
+  </section>
+
+  <section class="section split flip" id="rider-app-section">
+    <div class="app-image-container tilt-card reveal" aria-label="Rider app preview">
+      <img src="./riderapp.jpeg" alt="Rider App Preview" class="preview-img">
+    </div>
+    <div class="copy reveal d1">
+      <h2>The rider app</h2>
+      <p>Go online when you want. See each trip's fare and distance before you accept, and get paid daily with a clear earnings breakdown.</p>
+    </div>
+  </section>
+
+  <section class="section split" id="ride-booking">
+    <div class="copy reveal">
+      <span class="eyebrow">SERVICES</span>
+      <h2>Ride Booking</h2>
+      <p>EVAMobility brings ride booking, parcel delivery, and logistics solutions together on one simple platform. Smart matching puts the nearest rider on your route for quick pickups with transparent pricing.</p>
+    </div>
+    <div class="app-image-container tilt-card reveal d1" aria-label="Ride booking preview">
+      <img src="./ride.jpeg" alt="Ride Booking Preview" class="preview-img">
+    </div>
+  </section>
+
+  <section class="section split flip" id="parcel">
+    <div class="app-image-container tilt-card reveal" aria-label="Parcel delivery preview">
+      <img src="./pakage.jpeg" alt="Parcel Delivery Preview" class="preview-img">
+    </div>
+    <div class="copy reveal d1">
+      <span class="eyebrow">SERVICES</span>
+      <h2>Parcel</h2>
+      <p>Send packages anywhere across the city securely and in real-time. Fast tracking, reliable delivery, and absolute peace of mind for every single shipment.</p>
+    </div>
+  </section>
+
+  <section class="section split" id="logistics">
+    <div class="copy reveal">
+      <span class="eyebrow">SERVICES</span>
+      <h2>Logistics Solutions</h2>
+      <p>Our goal is to make transportation and delivery simple, accessible, reliable, and convenient while creating new opportunities for transportation and logistics partners.</p>
+    </div>
+    <div class="app-image-container tilt-card reveal d1" aria-label="Logistics solutions preview">
+      <img src="./logistic.jpeg" alt="Logistics Solutions Preview" class="preview-img">
+    </div>
+  </section>
+
+  <section class="section experience" id="partners">
+    <div class="experience-copy reveal">
+      <span class="eyebrow">PARTNERSHIPS</span>
+      <h2>For Logistics Partners</h2>
+      <p>EVAMobility helps transportation and logistics businesses connect with more opportunities, expand their reach, and grow their operations through technology.</p>
+
+      <div class="experience-points">
+        <div><strong>Expand Reach</strong><span>Connect with more daily opportunities and customers.</span></div>
+        <div><strong>Scale Operations</strong><span>Grow your fleet management efficiently with technology.</span></div>
+        <div><strong>Enquiry Support</strong><span>Reach out to us directly for partnership queries.</span></div>
+      </div>
+    </div>
+
+    <div class="partner-visual reveal d1">
+      <div class="partner-badge-card tilt-card">
+        <div class="partner-icon-box">⚡</div>
+        <h4>Fleet Management Hub</h4>
+        <p>Real-time tracking and automated dispatch for maximum efficiency.</p>
+      </div>
+      <div class="partner-mini-grid">
+        <div class="p-mini-box">
+          <strong>Live</strong>
+          <span>Monitoring</span>
+        </div>
+        <div class="p-mini-box">
+          <strong>Secure</strong>
+          <span>Transactions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section how" id="how">
+    <div class="section-heading reveal">
+      <span class="eyebrow">HOW EVA WORKS</span>
+      <h2>Move through the city, without the friction.</h2>
+      <p>From booking to arrival, EVA connects the entire ride experience into one simple flow.</p>
+    </div>
+
+    <div class="how-grid">
+      <article class="how-card tilt-card reveal">
+        <span class="step-number">01</span>
+        <div class="card-icon">⌖</div>
+        <h3>Choose your destination</h3>
+        <p>Enter where you want to go and get a clear ride option built around your route.</p>
+      </article>
+
+      <article class="how-card tilt-card reveal d1">
+        <span class="step-number">02</span>
+        <div class="card-icon">↗</div>
+        <h3>Match with a rider</h3>
+        <p>EVA connects you with a nearby rider so your pickup stays quick and efficient.</p>
+      </article>
+
+      <article class="how-card tilt-card reveal">
+        <span class="step-number">03</span>
+        <div class="card-icon">✓</div>
+        <h3>Track your journey</h3>
+        <p>Follow the ride live, keep your trip visible and stay informed until you arrive.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section experience" id="experience">
+    <div class="experience-copy reveal">
+      <span class="eyebrow">ONE ECOSYSTEM</span>
+      <h2>Designed around the way cities actually move.</h2>
+      <p>EVA brings riders, drivers and the city into one connected mobility layer — built to feel fast, transparent and effortless.</p>
+
+      <div class="experience-points">
+        <div><strong>Fast pickups</strong><span>Smart matching reduces unnecessary waiting.</span></div>
+        <div><strong>Transparent pricing</strong><span>Know the fare before the ride begins.</span></div>
+        <div><strong>Connected journeys</strong><span>Booking, tracking and support stay in one place.</span></div>
+      </div>
+    </div>
+
+    <div class="orbit-panel reveal d1">
+      <div class="orbit orbit-a"></div>
+      <div class="orbit orbit-b"></div>
+      <div class="orbit-core">
+        <span>EVA</span>
+        <small>CONNECTED<br>MOBILITY</small>
+      </div>
+      <div class="orbit-rotator">
+        <span class="orbit-node node-1">RIDER</span>
+        <span class="orbit-node node-2">DRIVER</span>
+        <span class="orbit-node node-3">CITY</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section stats-section" id="vision">
+    <div class="stats-head reveal">
+      <span class="eyebrow">THE EVA VISION</span>
+      <h2>More than a ride. A smarter movement layer.</h2>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat reveal"><strong class="counter" data-target="1">01</strong><span>Simple booking</span><p>Less tapping. Less waiting. More moving.</p></div>
+      <div class="stat reveal d1"><strong class="counter" data-target="2">02</strong><span>Safer journeys</span><p>Designed around visibility, verification and support.</p></div>
+      <div class="stat reveal"><strong class="counter" data-target="3">03</strong><span>Cleaner cities</span><p>Built with an electric-first future in mind.</p></div>
+      <div class="stat reveal d1"><strong class="counter" data-target="4">04</strong><span>Better for riders</span><p>Clear trip details and transparent earnings.</p></div>
+    </div>
+  </section>
+
+  <section class="section final-cta" id="contact">
+    <div class="final-cta-inner tilt-card reveal">
+      <span class="eyebrow">CONTACT US</span>
+      <h2>Have questions or want to partner with us?</h2>
+      <p>Get in touch with our support and enquiry team directly via email:</p>
+      <a href="mailto:evamobilityenquiry@gmail.com" class="btn">evamobilityenquiry@gmail.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <img src="logo.png" alt="EVA">
+  <span>Contact: <a href="mailto:evamobilityenquiry@gmail.com" style="color: #60a5fa; text-decoration: underline;">evamobilityenquiry@gmail.com</a></span>
+  <span>© 2026 EVA. All rights reserved.</span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
